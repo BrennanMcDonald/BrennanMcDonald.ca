@@ -1,0 +1,267 @@
+body {
+  padding:0;margin:0;
+}
+a, h1, h2, h3, h4, p, div{
+  font-family: 'Ubuntu', sans-serif;
+  color:white;
+}
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration:
+  color:inherit;
+}
+
+.full-height{
+    height:100vh;
+}
+
+.jumbo:before {
+  background-image: -webkit-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+      background-image: -moz-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+      background-image: -o-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+      background-image: linear-gradient(150deg,rgba(145,117,189,.8),rgba(54,67,71,.5));
+}
+
+.jumbo-hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: -webkit-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+  background-image: -moz-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+  background-image: -o-linear-gradient(45deg,rgba(145,117,189,.8),rgba(145,117,189,.5));
+  background-image: linear-gradient(150deg,rgba(145,117,189,.8),rgba(54,67,71,.5))
+}
+
+.jumbo {
+  background: no-repeat url("../img/hero-bg.jpg");
+  background-size: cover;
+  position: fixed;
+  width:100%;
+  z-index: -1;
+  top:0;
+  left:0;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  min-height: 350px;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+}
+
+.jumbo-text {
+  font-size: 3em;
+  z-index: 10;
+  width:100%;
+  top:0;
+}
+
+.bottom-helper{
+  font-size: 1.5em;
+  margin-bottom:25px;
+  position: absolute;
+  bottom:0px;
+  width:100%;
+  text-align: center;
+  cursor:pointer;
+}
+
+.body-div{
+  background:rgba(0,0,0,0.87);
+}
+
+.bottom-helper i {
+  transition: all 0.1s ease-in;
+}
+
+.bottom-helper i {
+  position:relative;
+  top:0px;
+}
+
+.bottom-helper:hover i {
+  position:relative;
+  top:10px;
+}
+
+.container {
+  width:960px;
+  margin:auto;
+}
+.l-center-white,
+.l-center-white-sm {
+  width:100%;
+  text-align: center;
+  margin:0px;
+  padding-top:10px;
+  font-size:3em;
+}
+.l-center-white-sm {
+  font-size:2.4em;
+}
+
+.container{
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col50 {
+  margin-top:15px;
+  width:50%;
+}
+.col25{
+  margin-top:15px;
+  width:25%;
+}
+.col75 {
+  margin-top:15px;
+  width:75%;
+}
+.col100 {
+  margin-top:15px;
+  width:100%;
+}
+.padtop-10px{
+  padding-top:25px;
+}
+.center {
+  text-align: center;
+}
+
+.about-me-icon{
+  width:33%;
+  height:auto;
+}
+.a-btn {
+  border:solid 1px white;
+  padding:10px;
+  margin:5px;
+  margin-top:10px;
+}
+
+.pad10 p {
+  padding-left:10px;
+  padding-right:10px;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip {
+    margin:auto;
+    left:0;
+    right:0;
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+.tooltip-bottom {
+    top: 125%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.img-fit{
+    max-width:100%;
+    border-radius: 2px;
+    box-sizing: 1px 1px 1px 1px grey;
+}
+
+.btn-blue-ghost{
+  color:rgba(145,117,189,1);
+  padding:10px;
+  border: solid 2px rgba(145,117,189,1);
+  border-radius: 5px;
+  cursor:pointer;
+  transition: all 0.1s ease-in;
+  margin-left:10px;
+}
+.btn-blue-ghost:hover{
+  background-color:rgba(145,117,189,.4);
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+   /* Large Devices, Wide Screens */
+   @media only screen and (max-width : 1200px) {
+     .container {
+       width:1000px;
+       margin:auto;
+     }
+     .jumbo-text {
+       font-size: 4em;
+     }
+   }
+
+   /* Medium Devices, Desktops */
+   @media only screen and (max-width : 992px) {
+     .container {
+       width:700px;
+       margin:auto;
+     }
+     .col25,
+     .col75,
+     .col50{
+       width:100%;
+       padding:0px;
+     }
+   }
+
+   /* Small Devices, Tablets */
+   @media only screen and (max-width : 768px) {
+     .container {
+       width:100%;
+     }
+     .jumbo-text {
+       font-size: 3em;
+     }
+
+   }
+
+   /* Extra Small Devices, Phones */
+   @media only screen and (max-width : 480px) {
+     .jumbo-text {
+       font-size: 2em;
+     }
+     .container {
+     }
+   }
+
+   /* Custom, iPhone Retina */
+   @media only screen and (max-width : 320px) {
+     .container {
+       width:100%;
+     }
+   }
