@@ -30,7 +30,40 @@
 		}
 		.logo {
 		  	width:80%;height:auto;
-
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.btn {
+			border: none;
+			font-family: inherit;
+			font-size: inherit;
+			color: inherit;
+			background: none;
+			cursor: pointer;
+			padding: 15px 40px;
+			display: inline-block;
+			margin: 10px 30px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 400;
+			outline: none;
+			position: relative;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}
+		.btn-1 {
+			border: 2px solid #fff;
+			color: #fff;
+		}
+		.btn-1a:hover, .btn-1a:active {
+			color: #0e83cd;
+			background: #fff;
+		}
+		.top-right-button {
+			top:0px;
+			right:0px;
+			position: absolute;
 		}
 		@media (min-width: 768px) {
 		  .container {
@@ -54,6 +87,9 @@
 </head>
 <body>
 	<div class="logo_center">
+			<div class="top-right-button">
+				<button class="btn btn-1 btn-1a" onclick="window.location.href='http://blog.brennanmcdonald.ca'">Blog</button>
+			</div>
 		<img src="Logo.png" class="logo">
 	</div>
 	<div class="button_bar">
