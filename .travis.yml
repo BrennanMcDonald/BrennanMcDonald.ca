@@ -9,6 +9,7 @@ install:
   - wget https://github.com/gohugoio/hugo/releases/download/v0.56.1/hugo_0.56.1_Linux-64bit.deb
   - sudo dpkg -i hugo_0.56.1_Linux-64bit.deb
   - sudo apt-get install -f
+  - rm -f hugo_0.56.1_Linux-64bit.deb
 script:
   - hugo
   - echo "$CNAME_URL" > public/CNAME
