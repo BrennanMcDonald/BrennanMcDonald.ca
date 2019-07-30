@@ -22,4 +22,5 @@ deploy:
   upload-dir: "/public/"
   acl: ''
   on:
+    all_branches: true
     repo: BrennanMcDonald/BrennanMcDonaldIO
