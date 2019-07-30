@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "en-us"
-theme = "hello-friend"
+theme = "hello-friend-ng"
 paginate = 5
 
 [params]
@@ -12,6 +12,23 @@ paginate = 5
   showMenuItems = 2
   # Show reading time in minutes for posts
   showReadingTime = false
+
+  # Social icons
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/bMickeyDonald"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:brennan.mcdonald.mail@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/BrennanMcDonald"
+
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/brennan-mcdonald"
 
 [languages]
   [languages.en]

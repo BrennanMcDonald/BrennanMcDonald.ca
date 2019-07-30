@@ -1,2 +1,2 @@
-# about
-here is a test
+# Me
+A software developer with a passion for web and automation, I've worked on systems all across the spectrum. From small business custom soultions to massive scale financial applications, java to C#, AWS to raspberry pi. Passionate about clean and fast code.
