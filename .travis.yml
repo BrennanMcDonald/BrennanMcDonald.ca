@@ -1,0 +1,29 @@
+dist: xenial
+language: python
+
+python:
+  - '3.7'
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get -yq install apt-transport-https tor curl
+install:
+  - sudo systemctl start tor
+  - download_command='curl -fsSL -x socks5h://127.0.0.1:9050'
+  - $download_command -O $($download_command https://api.github.com/repos/gohugoio/hugo/releases/latest
+    | sed -r -n '/browser_download_url/{/Linux-64bit.deb/{s@[^:]*:[[:space:]]*"([^"]*)".*@\1@g;p;q}}')
+  - sudo dpkg -i hugo*.deb
+  - rm -rf public 2> /dev/null
+script:
+  - hugo
+  - echo "$CNAME_URL" > public/CNAME
+
+deploy:
+  provider: s3
+  access_key_id: AKIA4465SVUIEW7QISXE
+  secret_access_key:
+    secure: C/FxvqvR3dtlNoqlon44ajaPHA5UCIGXhY5wygFSBewxcCafZ4OdVakuV3oKghyCUa38RbhOUS+kvRDbkZtYMgXoJ5TBzYfzaKF8Z4LS+dIedDk2k44fM99dzcpSXWuN/ulTUnRAZ/J0GHFOcbHldL+uSxpY8FDTB2V9Jtal3gCNncUJFtUGhk5RTkHk37FXz7M0tUqhKBEXDQKvXZTTxNb88cA1JJMv9Bp6wN3C3Mlco5WwRwiVRGbjtsNEPu8rLd8grbF6UoelbpV7foOFJudL+WHC7496l7tYmECPk4LuGnjaHoXylaiWDaV+z8D59tiHstF5tYiJ/jPRdCDtruov0So+B9U0KylupQu1yE/XNCbwwVlO6+VNV9BQovpmVmW/7AA1BHmgA5FhRwQnwmMEp7jVHt9z+15DxWPEMv3M6HSb9BcYbOYC4ym0M6n98FoApBaNBXdbhnAJ72LsTNazCey6raLjNT0lsnr2ArQs77qUzytkT4hhjjq/x4p17XzM3SQ5CCxz+wSk9twesBPTxCkhbzGkjckAbDllbhvvllVMYPXTW5PTPwf4KKuMmhhElnOP75nUyVwiluA37l2vPrXHhop/SmECpp/c68xZ8aEnB68Psf+EEWjdj//SNhrm+zWewoTVuY67BppUYEPjzIeYWrNa/tJq9yQTpmE=
+  bucket: brmc-static-website
+  upload-dir: "/public/"
+  acl: ''
+  on:
+    repo: BrennanMcDonald/BrennanMcDonaldIO
