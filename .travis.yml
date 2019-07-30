@@ -10,7 +10,7 @@ install:
   - sudo dpkg -i hugo_0.56.1_Linux-64bit.deb
   - sudo apt-get install -f
   - rm -f hugo_0.56.1_Linux-64bit.deb
-  - echo "$TRAVIS_COMMIT" >> content/_index.md
+  - echo "$TRAVIS_COMMIT" >> content/index.md
 script:
   - hugo
   - echo "$CNAME_URL" > public/CNAME
