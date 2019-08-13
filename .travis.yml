@@ -12,7 +12,6 @@ install:
   - rm -f hugo_0.56.1_Linux-64bit.deb
 script:
   - hugo
-  - ls public
   - echo "$CNAME_URL" > public/CNAME
 
 deploy:
