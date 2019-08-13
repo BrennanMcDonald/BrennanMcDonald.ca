@@ -62,4 +62,4 @@ paginate = 5
       [[languages.en.menu.main]]
         identifier = "blog"
         name = "Blog"
-        url = "blog.brennanmcdonald.ca"
+        url = "http://blog.brennanmcdonald.ca"
