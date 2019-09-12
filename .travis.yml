@@ -13,6 +13,8 @@ install:
 script:
   - hugo
   - echo "$CNAME_URL" > public/CNAME
+  - cd public
+  - wget "https://github.com/BrennanMcDonald/BrennanMcDonaldIO/raw/master/Resume.pdf"
 
 deploy:
   provider: s3
