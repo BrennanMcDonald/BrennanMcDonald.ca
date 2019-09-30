@@ -17,9 +17,8 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: AKIA4465SVUIEW7QISXE
-  secret_access_key:
-    secure: C/FxvqvR3dtlNoqlon44ajaPHA5UCIGXhY5wygFSBewxcCafZ4OdVakuV3oKghyCUa38RbhOUS+kvRDbkZtYMgXoJ5TBzYfzaKF8Z4LS+dIedDk2k44fM99dzcpSXWuN/ulTUnRAZ/J0GHFOcbHldL+uSxpY8FDTB2V9Jtal3gCNncUJFtUGhk5RTkHk37FXz7M0tUqhKBEXDQKvXZTTxNb88cA1JJMv9Bp6wN3C3Mlco5WwRwiVRGbjtsNEPu8rLd8grbF6UoelbpV7foOFJudL+WHC7496l7tYmECPk4LuGnjaHoXylaiWDaV+z8D59tiHstF5tYiJ/jPRdCDtruov0So+B9U0KylupQu1yE/XNCbwwVlO6+VNV9BQovpmVmW/7AA1BHmgA5FhRwQnwmMEp7jVHt9z+15DxWPEMv3M6HSb9BcYbOYC4ym0M6n98FoApBaNBXdbhnAJ72LsTNazCey6raLjNT0lsnr2ArQs77qUzytkT4hhjjq/x4p17XzM3SQ5CCxz+wSk9twesBPTxCkhbzGkjckAbDllbhvvllVMYPXTW5PTPwf4KKuMmhhElnOP75nUyVwiluA37l2vPrXHhop/SmECpp/c68xZ8aEnB68Psf+EEWjdj//SNhrm+zWewoTVuY67BppUYEPjzIeYWrNa/tJq9yQTpmE=
+  access_key_id: $AWS_ACCESS
+  secret_access_key: $AWS_SECRET
   bucket: brmc-static-website
   skip_cleanup: true
   local-dir: public
