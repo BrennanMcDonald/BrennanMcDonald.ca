@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/brennanmcd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://brennanmcdonald.ca
+  * I am brennanmcd (https://keybase.io/brennanmcd) on keybase.
+  * I have a public key ASCEPis4Umgam4x4rm1mxKiQmq9e3N5lnb4QDqWQVUpSNgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120843e2b3852681a9b8c78ae6d66c4a8909aaf5edcde659dbe100ea590554a52360a",
+      "host": "keybase.io",
+      "kid": "0120843e2b3852681a9b8c78ae6d66c4a8909aaf5edcde659dbe100ea590554a52360a",
+      "uid": "8f0ff85667686b6c07cd1c2d9f27a019",
+      "username": "brennanmcd"
+    },
+    "merkle_root": {
+      "ctime": 1570541774,
+      "hash": "243d39b303efc742162961a577ed57c9bd10386e875ba718fb34dbc4f9255bf5e76b63a84bc136e57934d0a79c82c003358a70ab30d0461dde9d2b67ff8a11c1",
+      "hash_meta": "0372395d25ae489f6a6c0cdd5a22a442cf9e6bd0228a3c7942eeb9c322ef2079",
+      "seqno": 7908383
+    },
+    "service": {
+      "entropy": "0sra43UKpK00nWJnWbBQJz+c",
+      "hostname": "brennanmcdonald.ca",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.5.0"
+  },
+  "ctime": 1570541786,
+  "expire_in": 504576000,
+  "prev": "4502fbc64818eaba5ad7c919ceb6566af9cae221dfd87b40fee03c6234149984",
+  "seqno": 10,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghD4rOFJoGpuMeK5tZsSokJqvXtzeZZ2+EA6lkFVKUjYKp3BheWxvYWTESpcCCsQgRQL7xkgY6rpa18kZzrZWavnK4iHf2HtA/uA8YjQUmYTEIC7Pu0/6QTJqEwAfRaDkrYaWIvn4DErvMwHXSqKAH+IZAgHCo3NpZ8RAKX5KhGkDknIL7G6rD4J/6ZqVghq3U8DLy3CxbFYlOfzGar0/QIRCYRGYc145xirFVYXXvXrqDm6s+TbqoSf+BahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPRgsugyKkrcArSacdVuB8zEyZk3JYgZ8RA7LMBKQks1o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/brennanmcd
+
+==================================================================
