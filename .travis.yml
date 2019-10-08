@@ -24,4 +24,4 @@ deploy:
   skip_cleanup: true
   local-dir: public
   on:
-    repo: BrennanMcDonald/BrennanMcDonaldIO
+    repo: BrennanMcDonald/BrennanMcDonald.ca
